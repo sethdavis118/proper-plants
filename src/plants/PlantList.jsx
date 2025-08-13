@@ -1,6 +1,6 @@
 import { PlantDetails } from "./PlantDetails";
 
-export function PlantList({ plants, addToCart }) {
+export function PlantList({ plants }) {
   return (
     <section className="plantList">
       <h2>Plants</h2>{" "}
@@ -9,7 +9,7 @@ export function PlantList({ plants, addToCart }) {
         {plants.map((plant) => {
           return (
             <li key={plant.id}>
-              <PlantDetails plant={plant} addToCart={addToCart} />
+              <PlantDetails plant={plant} />
             </li>
           );
         })}

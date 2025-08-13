@@ -4,9 +4,12 @@ import "./index.css";
 import "./plants/plants.css";
 import "./cart/cart.css";
 import App from "./App.jsx";
+import { DataProvider } from "./Context.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <DataProvider>
+      <App />
+    </DataProvider>
   </StrictMode>
 );

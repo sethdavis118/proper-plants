@@ -1,23 +1,21 @@
 import { CartDetails } from "./CartDetails";
+import { ShowData } from "../Context";
 
-export function CartList({ cart, addToCart, subtractFromCart }) {
-  console.log(cart);
-  const cartLength = cart.filter((item) => item.cartCount > 0).length;
+export function CartList() {
+  const data = ShowData();
+  console.log(data.cart);
+  const cartLength = data.cart.filter((item) => item.cartCount > 0).length;
   if (cartLength !== 0) {
     return (
       <section className="cartList">
         <h2>Cart</h2>
         {/* This might have to be broken out into a heading or something*/}
         <ul>
-          {cart.map((item) => {
+          {data.cart.map((item) => {
             if (item.cartCount > 0) {
               return (
                 <li key={item.id}>
-                  <CartDetails
-                    item={item}
-                    addToCart={addToCart}
-                    subtractFromCart={subtractFromCart}
-                  ></CartDetails>
+                  <CartDetails item={item}></CartDetails>
                 </li>
               );
             }
