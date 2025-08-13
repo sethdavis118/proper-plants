@@ -1,0 +1,21 @@
+.plant {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border: solid lightgray;
+  border-width: 1px;
+
+  .plantImg {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0rem;
+  }
+  /* .plantName {
+    flex-grow: 1fr;
+  } */
+}
+
+.plantsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}

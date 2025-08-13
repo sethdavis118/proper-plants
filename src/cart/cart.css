@@ -1,0 +1,19 @@
+.cart-functions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  p {
+    text-align: center;
+  }
+
+  .action-button {
+    padding: 0.3rem;
+  }
+}
+
+.cart-items {
+  padding: 0.8rem;
+  border-bottom: solid lightgray;
+  border-width: 1px;
+}

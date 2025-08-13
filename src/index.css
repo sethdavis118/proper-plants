@@ -1,0 +1,22 @@
+* {
+  font-family: sans-serif;
+  margin: 0.2rem;
+  padding: 0;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: row;
+
+  .plantList {
+    flex-grow: 5;
+  }
+
+  .cartList {
+    flex-grow: 1;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
